@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09922B1B739C1E397257A41B /* Pods_OCR_Tesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1DF9C3ED2C4F72E60269D9 /* Pods_OCR_Tesseract.framework */; };
+		8CA8D66F63F644A7EAF8DE59 /* Pods_OCR_Tesseract_OCR_TesseractUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8213847A806AEB22746D894 /* Pods_OCR_Tesseract_OCR_TesseractUITests.framework */; };
+		D447CBFA23DB0E9F004D3BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CBF923DB0E9F004D3BED /* AppDelegate.swift */; };
+		D447CBFC23DB0E9F004D3BED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CBFB23DB0E9F004D3BED /* SceneDelegate.swift */; };
+		D447CBFE23DB0E9F004D3BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CBFD23DB0E9F004D3BED /* ViewController.swift */; };
+		D447CC0123DB0E9F004D3BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D447CBFF23DB0E9F004D3BED /* Main.storyboard */; };
+		D447CC0323DB0EA2004D3BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D447CC0223DB0EA2004D3BED /* Assets.xcassets */; };
+		D447CC0623DB0EA2004D3BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D447CC0423DB0EA2004D3BED /* LaunchScreen.storyboard */; };
+		D447CC1123DB0EA2004D3BED /* OCR_TesseractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CC1023DB0EA2004D3BED /* OCR_TesseractTests.swift */; };
+		D447CC1C23DB0EA2004D3BED /* OCR_TesseractUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CC1B23DB0EA2004D3BED /* OCR_TesseractUITests.swift */; };
+		D447CC3023DB0F7A004D3BED /* Pawan_en.png in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2A23DB0F7A004D3BED /* Pawan_en.png */; };
+		D447CC3123DB0F7A004D3BED /* Pawan_ru.png in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2B23DB0F7A004D3BED /* Pawan_ru.png */; };
+		D447CC3223DB0F7A004D3BED /* Pawan_jp.png in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2C23DB0F7A004D3BED /* Pawan_jp.png */; };
+		D447CC3323DB0F7A004D3BED /* Pawan_text.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2D23DB0F7A004D3BED /* Pawan_text.rtf */; };
+		D447CC3423DB0F7A004D3BED /* Pawan_fr.png in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2E23DB0F7A004D3BED /* Pawan_fr.png */; };
+		D447CC3523DB0F7A004D3BED /* Pawan_de.png in Resources */ = {isa = PBXBuildFile; fileRef = D447CC2F23DB0F7A004D3BED /* Pawan_de.png */; };
+		D447CC3823DB1319004D3BED /* ReadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D447CC3623DB1318004D3BED /* ReadCell.swift */; };
+		D447CC3923DB1319004D3BED /* ReadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D447CC3723DB1319004D3BED /* ReadCell.xib */; };
+		D447CC3B23DB14CC004D3BED /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D447CC3A23DB14CC004D3BED /* tessdata */; };
+		E43D567E3F135DAAF101BE22 /* Pods_OCR_TesseractTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62AC352570294E8DADB4D3A /* Pods_OCR_TesseractTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D447CC0D23DB0EA2004D3BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D447CBEE23DB0E9F004D3BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D447CBF523DB0E9F004D3BED;
+			remoteInfo = "OCR-Tesseract";
+		};
+		D447CC1823DB0EA2004D3BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D447CBEE23DB0E9F004D3BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D447CBF523DB0E9F004D3BED;
+			remoteInfo = "OCR-Tesseract";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1795D5CBD77C017558119CF9 /* Pods-OCR-TesseractTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-TesseractTests.debug.xcconfig"; path = "Target Support Files/Pods-OCR-TesseractTests/Pods-OCR-TesseractTests.debug.xcconfig"; sourceTree = "<group>"; };
+		196265C6CD537C8EC92D0E65 /* Pods-OCR-Tesseract-OCR-TesseractUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Tesseract-OCR-TesseractUITests.debug.xcconfig"; path = "Target Support Files/Pods-OCR-Tesseract-OCR-TesseractUITests/Pods-OCR-Tesseract-OCR-TesseractUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69C84D1E1F5115590A31040D /* Pods-OCR-TesseractTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-TesseractTests.release.xcconfig"; path = "Target Support Files/Pods-OCR-TesseractTests/Pods-OCR-TesseractTests.release.xcconfig"; sourceTree = "<group>"; };
+		762A9C056404E456BCA25868 /* Pods-OCR-Tesseract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Tesseract.release.xcconfig"; path = "Target Support Files/Pods-OCR-Tesseract/Pods-OCR-Tesseract.release.xcconfig"; sourceTree = "<group>"; };
+		AD1DF9C3ED2C4F72E60269D9 /* Pods_OCR_Tesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Tesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8213847A806AEB22746D894 /* Pods_OCR_Tesseract_OCR_TesseractUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Tesseract_OCR_TesseractUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62AC352570294E8DADB4D3A /* Pods_OCR_TesseractTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_TesseractTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D447CBF623DB0E9F004D3BED /* OCR-Tesseract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-Tesseract.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D447CBF923DB0E9F004D3BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D447CBFB23DB0E9F004D3BED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D447CBFD23DB0E9F004D3BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D447CC0023DB0E9F004D3BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D447CC0223DB0EA2004D3BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D447CC0523DB0EA2004D3BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D447CC0723DB0EA2004D3BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D447CC0C23DB0EA2004D3BED /* OCR-TesseractTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCR-TesseractTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D447CC1023DB0EA2004D3BED /* OCR_TesseractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_TesseractTests.swift; sourceTree = "<group>"; };
+		D447CC1223DB0EA2004D3BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D447CC1723DB0EA2004D3BED /* OCR-TesseractUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCR-TesseractUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D447CC1B23DB0EA2004D3BED /* OCR_TesseractUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_TesseractUITests.swift; sourceTree = "<group>"; };
+		D447CC1D23DB0EA2004D3BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D447CC2A23DB0F7A004D3BED /* Pawan_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pawan_en.png; sourceTree = "<group>"; };
+		D447CC2B23DB0F7A004D3BED /* Pawan_ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pawan_ru.png; sourceTree = "<group>"; };
+		D447CC2C23DB0F7A004D3BED /* Pawan_jp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pawan_jp.png; sourceTree = "<group>"; };
+		D447CC2D23DB0F7A004D3BED /* Pawan_text.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Pawan_text.rtf; sourceTree = "<group>"; };
+		D447CC2E23DB0F7A004D3BED /* Pawan_fr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pawan_fr.png; sourceTree = "<group>"; };
+		D447CC2F23DB0F7A004D3BED /* Pawan_de.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pawan_de.png; sourceTree = "<group>"; };
+		D447CC3623DB1318004D3BED /* ReadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadCell.swift; sourceTree = "<group>"; };
+		D447CC3723DB1319004D3BED /* ReadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadCell.xib; sourceTree = "<group>"; };
+		D447CC3A23DB14CC004D3BED /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		EAF107FEA9B5F14753ACACC2 /* Pods-OCR-Tesseract-OCR-TesseractUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Tesseract-OCR-TesseractUITests.release.xcconfig"; path = "Target Support Files/Pods-OCR-Tesseract-OCR-TesseractUITests/Pods-OCR-Tesseract-OCR-TesseractUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6B5510243919D45B090D59D /* Pods-OCR-Tesseract.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Tesseract.debug.xcconfig"; path = "Target Support Files/Pods-OCR-Tesseract/Pods-OCR-Tesseract.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D447CBF323DB0E9F004D3BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09922B1B739C1E397257A41B /* Pods_OCR_Tesseract.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC0923DB0EA2004D3BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43D567E3F135DAAF101BE22 /* Pods_OCR_TesseractTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC1423DB0EA2004D3BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA8D66F63F644A7EAF8DE59 /* Pods_OCR_Tesseract_OCR_TesseractUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDB895545AFD191DEFA73A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD1DF9C3ED2C4F72E60269D9 /* Pods_OCR_Tesseract.framework */,
+				B8213847A806AEB22746D894 /* Pods_OCR_Tesseract_OCR_TesseractUITests.framework */,
+				C62AC352570294E8DADB4D3A /* Pods_OCR_TesseractTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC574C3EFD940F8EC8446D08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B5510243919D45B090D59D /* Pods-OCR-Tesseract.debug.xcconfig */,
+				762A9C056404E456BCA25868 /* Pods-OCR-Tesseract.release.xcconfig */,
+				196265C6CD537C8EC92D0E65 /* Pods-OCR-Tesseract-OCR-TesseractUITests.debug.xcconfig */,
+				EAF107FEA9B5F14753ACACC2 /* Pods-OCR-Tesseract-OCR-TesseractUITests.release.xcconfig */,
+				1795D5CBD77C017558119CF9 /* Pods-OCR-TesseractTests.debug.xcconfig */,
+				69C84D1E1F5115590A31040D /* Pods-OCR-TesseractTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D447CBED23DB0E9F004D3BED = {
+			isa = PBXGroup;
+			children = (
+				D447CBF823DB0E9F004D3BED /* OCR-Tesseract */,
+				D447CC0F23DB0EA2004D3BED /* OCR-TesseractTests */,
+				D447CC1A23DB0EA2004D3BED /* OCR-TesseractUITests */,
+				D447CBF723DB0E9F004D3BED /* Products */,
+				CC574C3EFD940F8EC8446D08 /* Pods */,
+				4DDB895545AFD191DEFA73A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D447CBF723DB0E9F004D3BED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D447CBF623DB0E9F004D3BED /* OCR-Tesseract.app */,
+				D447CC0C23DB0EA2004D3BED /* OCR-TesseractTests.xctest */,
+				D447CC1723DB0EA2004D3BED /* OCR-TesseractUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D447CBF823DB0E9F004D3BED /* OCR-Tesseract */ = {
+			isa = PBXGroup;
+			children = (
+				D447CC3A23DB14CC004D3BED /* tessdata */,
+				D447CC2923DB0F50004D3BED /* Resources */,
+				D447CBF923DB0E9F004D3BED /* AppDelegate.swift */,
+				D447CBFB23DB0E9F004D3BED /* SceneDelegate.swift */,
+				D447CBFD23DB0E9F004D3BED /* ViewController.swift */,
+				D447CC3623DB1318004D3BED /* ReadCell.swift */,
+				D447CC3723DB1319004D3BED /* ReadCell.xib */,
+				D447CBFF23DB0E9F004D3BED /* Main.storyboard */,
+				D447CC0223DB0EA2004D3BED /* Assets.xcassets */,
+				D447CC0423DB0EA2004D3BED /* LaunchScreen.storyboard */,
+				D447CC0723DB0EA2004D3BED /* Info.plist */,
+			);
+			path = "OCR-Tesseract";
+			sourceTree = "<group>";
+		};
+		D447CC0F23DB0EA2004D3BED /* OCR-TesseractTests */ = {
+			isa = PBXGroup;
+			children = (
+				D447CC1023DB0EA2004D3BED /* OCR_TesseractTests.swift */,
+				D447CC1223DB0EA2004D3BED /* Info.plist */,
+			);
+			path = "OCR-TesseractTests";
+			sourceTree = "<group>";
+		};
+		D447CC1A23DB0EA2004D3BED /* OCR-TesseractUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D447CC1B23DB0EA2004D3BED /* OCR_TesseractUITests.swift */,
+				D447CC1D23DB0EA2004D3BED /* Info.plist */,
+			);
+			path = "OCR-TesseractUITests";
+			sourceTree = "<group>";
+		};
+		D447CC2923DB0F50004D3BED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D447CC2F23DB0F7A004D3BED /* Pawan_de.png */,
+				D447CC2A23DB0F7A004D3BED /* Pawan_en.png */,
+				D447CC2E23DB0F7A004D3BED /* Pawan_fr.png */,
+				D447CC2C23DB0F7A004D3BED /* Pawan_jp.png */,
+				D447CC2B23DB0F7A004D3BED /* Pawan_ru.png */,
+				D447CC2D23DB0F7A004D3BED /* Pawan_text.rtf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D447CBF523DB0E9F004D3BED /* OCR-Tesseract */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D447CC2023DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-Tesseract" */;
+			buildPhases = (
+				392D07BCF6DD03BB0176134E /* [CP] Check Pods Manifest.lock */,
+				D447CBF223DB0E9F004D3BED /* Sources */,
+				D447CBF323DB0E9F004D3BED /* Frameworks */,
+				D447CBF423DB0E9F004D3BED /* Resources */,
+				452649747013891054705D15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OCR-Tesseract";
+			productName = "OCR-Tesseract";
+			productReference = D447CBF623DB0E9F004D3BED /* OCR-Tesseract.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D447CC0B23DB0EA2004D3BED /* OCR-TesseractTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D447CC2323DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-TesseractTests" */;
+			buildPhases = (
+				BAB3A043E7C2C84CFAEF1168 /* [CP] Check Pods Manifest.lock */,
+				D447CC0823DB0EA2004D3BED /* Sources */,
+				D447CC0923DB0EA2004D3BED /* Frameworks */,
+				D447CC0A23DB0EA2004D3BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D447CC0E23DB0EA2004D3BED /* PBXTargetDependency */,
+			);
+			name = "OCR-TesseractTests";
+			productName = "OCR-TesseractTests";
+			productReference = D447CC0C23DB0EA2004D3BED /* OCR-TesseractTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D447CC1623DB0EA2004D3BED /* OCR-TesseractUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D447CC2623DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-TesseractUITests" */;
+			buildPhases = (
+				713F91FB575E47279653490B /* [CP] Check Pods Manifest.lock */,
+				D447CC1323DB0EA2004D3BED /* Sources */,
+				D447CC1423DB0EA2004D3BED /* Frameworks */,
+				D447CC1523DB0EA2004D3BED /* Resources */,
+				6EB804235443831B0675895E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D447CC1923DB0EA2004D3BED /* PBXTargetDependency */,
+			);
+			name = "OCR-TesseractUITests";
+			productName = "OCR-TesseractUITests";
+			productReference = D447CC1723DB0EA2004D3BED /* OCR-TesseractUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D447CBEE23DB0E9F004D3BED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Pawan Kumar";
+				TargetAttributes = {
+					D447CBF523DB0E9F004D3BED = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D447CC0B23DB0EA2004D3BED = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D447CBF523DB0E9F004D3BED;
+					};
+					D447CC1623DB0EA2004D3BED = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D447CBF523DB0E9F004D3BED;
+					};
+				};
+			};
+			buildConfigurationList = D447CBF123DB0E9F004D3BED /* Build configuration list for PBXProject "OCR-Tesseract" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D447CBED23DB0E9F004D3BED;
+			productRefGroup = D447CBF723DB0E9F004D3BED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D447CBF523DB0E9F004D3BED /* OCR-Tesseract */,
+				D447CC0B23DB0EA2004D3BED /* OCR-TesseractTests */,
+				D447CC1623DB0EA2004D3BED /* OCR-TesseractUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D447CBF423DB0E9F004D3BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D447CC3523DB0F7A004D3BED /* Pawan_de.png in Resources */,
+				D447CC3323DB0F7A004D3BED /* Pawan_text.rtf in Resources */,
+				D447CC3023DB0F7A004D3BED /* Pawan_en.png in Resources */,
+				D447CC3B23DB14CC004D3BED /* tessdata in Resources */,
+				D447CC3923DB1319004D3BED /* ReadCell.xib in Resources */,
+				D447CC0623DB0EA2004D3BED /* LaunchScreen.storyboard in Resources */,
+				D447CC3123DB0F7A004D3BED /* Pawan_ru.png in Resources */,
+				D447CC3223DB0F7A004D3BED /* Pawan_jp.png in Resources */,
+				D447CC3423DB0F7A004D3BED /* Pawan_fr.png in Resources */,
+				D447CC0323DB0EA2004D3BED /* Assets.xcassets in Resources */,
+				D447CC0123DB0E9F004D3BED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC0A23DB0EA2004D3BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC1523DB0EA2004D3BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		392D07BCF6DD03BB0176134E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-Tesseract-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452649747013891054705D15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract/Pods-OCR-Tesseract-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract/Pods-OCR-Tesseract-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract/Pods-OCR-Tesseract-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB804235443831B0675895E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract-OCR-TesseractUITests/Pods-OCR-Tesseract-OCR-TesseractUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract-OCR-TesseractUITests/Pods-OCR-Tesseract-OCR-TesseractUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCR-Tesseract-OCR-TesseractUITests/Pods-OCR-Tesseract-OCR-TesseractUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		713F91FB575E47279653490B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-Tesseract-OCR-TesseractUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB3A043E7C2C84CFAEF1168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-TesseractTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D447CBF223DB0E9F004D3BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D447CBFE23DB0E9F004D3BED /* ViewController.swift in Sources */,
+				D447CC3823DB1319004D3BED /* ReadCell.swift in Sources */,
+				D447CBFA23DB0E9F004D3BED /* AppDelegate.swift in Sources */,
+				D447CBFC23DB0E9F004D3BED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC0823DB0EA2004D3BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D447CC1123DB0EA2004D3BED /* OCR_TesseractTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D447CC1323DB0EA2004D3BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D447CC1C23DB0EA2004D3BED /* OCR_TesseractUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D447CC0E23DB0EA2004D3BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D447CBF523DB0E9F004D3BED /* OCR-Tesseract */;
+			targetProxy = D447CC0D23DB0EA2004D3BED /* PBXContainerItemProxy */;
+		};
+		D447CC1923DB0EA2004D3BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D447CBF523DB0E9F004D3BED /* OCR-Tesseract */;
+			targetProxy = D447CC1823DB0EA2004D3BED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D447CBFF23DB0E9F004D3BED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D447CC0023DB0E9F004D3BED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D447CC0423DB0EA2004D3BED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D447CC0523DB0EA2004D3BED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D447CC1E23DB0EA3004D3BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D447CC1F23DB0EA3004D3BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D447CC2123DB0EA3004D3BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B5510243919D45B090D59D /* Pods-OCR-Tesseract.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-Tesseract/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-Tesseract";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D447CC2223DB0EA3004D3BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762A9C056404E456BCA25868 /* Pods-OCR-Tesseract.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-Tesseract/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-Tesseract";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D447CC2423DB0EA3004D3BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1795D5CBD77C017558119CF9 /* Pods-OCR-TesseractTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-TesseractTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-TesseractTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCR-Tesseract.app/OCR-Tesseract";
+			};
+			name = Debug;
+		};
+		D447CC2523DB0EA3004D3BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C84D1E1F5115590A31040D /* Pods-OCR-TesseractTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-TesseractTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-TesseractTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCR-Tesseract.app/OCR-Tesseract";
+			};
+			name = Release;
+		};
+		D447CC2723DB0EA3004D3BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196265C6CD537C8EC92D0E65 /* Pods-OCR-Tesseract-OCR-TesseractUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-TesseractUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-TesseractUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OCR-Tesseract";
+			};
+			name = Debug;
+		};
+		D447CC2823DB0EA3004D3BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF107FEA9B5F14753ACACC2 /* Pods-OCR-Tesseract-OCR-TesseractUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "OCR-TesseractUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pk.poc.OCR-TesseractUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OCR-Tesseract";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D447CBF123DB0E9F004D3BED /* Build configuration list for PBXProject "OCR-Tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D447CC1E23DB0EA3004D3BED /* Debug */,
+				D447CC1F23DB0EA3004D3BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D447CC2023DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-Tesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D447CC2123DB0EA3004D3BED /* Debug */,
+				D447CC2223DB0EA3004D3BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D447CC2323DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-TesseractTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D447CC2423DB0EA3004D3BED /* Debug */,
+				D447CC2523DB0EA3004D3BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D447CC2623DB0EA3004D3BED /* Build configuration list for PBXNativeTarget "OCR-TesseractUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D447CC2723DB0EA3004D3BED /* Debug */,
+				D447CC2823DB0EA3004D3BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D447CBEE23DB0E9F004D3BED /* Project object */;
+}

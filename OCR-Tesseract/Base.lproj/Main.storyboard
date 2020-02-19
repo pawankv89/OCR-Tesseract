@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OCR_Tesseract" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uzq-ca-t03">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uzq-ca-t03" secondAttribute="height" multiplier="1:1" id="9cs-KS-93d"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uYt-TF-uk4">
+                                <rect key="frame" x="0.0" y="320" width="320" height="248"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mvS-WH-Szt"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fFh-m4-E7G"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vZ4-Vi-2gz">
+                                <rect key="frame" x="150" y="150" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uzq-ca-t03" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ABy-hk-uWG"/>
+                            <constraint firstItem="vZ4-Vi-2gz" firstAttribute="centerX" secondItem="Uzq-ca-t03" secondAttribute="centerX" id="bL4-wx-TmX"/>
+                            <constraint firstItem="uYt-TF-uk4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dN0-kw-vOr"/>
+                            <constraint firstItem="uYt-TF-uk4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h2f-BG-QoZ"/>
+                            <constraint firstItem="Uzq-ca-t03" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lgb-JN-kpw"/>
+                            <constraint firstItem="Uzq-ca-t03" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ucD-S7-Wof"/>
+                            <constraint firstItem="vZ4-Vi-2gz" firstAttribute="centerY" secondItem="Uzq-ca-t03" secondAttribute="centerY" id="vnn-Nw-0qi"/>
+                            <constraint firstItem="uYt-TF-uk4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wc9-KJ-aU6"/>
+                            <constraint firstItem="uYt-TF-uk4" firstAttribute="top" secondItem="Uzq-ca-t03" secondAttribute="bottom" id="yrX-Ih-udg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="vZ4-Vi-2gz" id="DSq-Al-a3f"/>
+                        <outlet property="chooseImageView" destination="Uzq-ca-t03" id="Lgl-v6-A9d"/>
+                        <outlet property="tableView" destination="uYt-TF-uk4" id="aQc-AZ-qTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+</document>
